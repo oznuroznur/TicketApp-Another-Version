@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sign Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+ input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=tel]{
+  width:100%;
+  padding:12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email]{
+  width:100%;
+  padding:12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top"> 
+    <div class="w3-bar w3-orange w3-wide w3-padding w3-card">
+      <a href="/homepage.html" class="w3-bar-item w3-button  w3-hover-black "><b>TICKET</b> App</a>
+      <div class="w3-right w3-hide-small"> 
+         <a href="/admin.html" class="w3-button  w3-hover-black"> ADMIN </a> 
+      </div>
+      <div class="w3-right w3-hide-small"> 
+        <a href="/login.html" class="w3-button  w3-hover-black"> Log In</a> 
+     </div>
+    </div>
+  </div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;border-radius: 5px;padding: 20px;" id="band">
+    <h2 class="w3-wide">Sign Up</h2>
+    <p class="w3-opacity"><i>If you have an account on TicketApp click <a href="/login.html" style="text-decoration: none;"> Log In</a> button.</i></p>
+    <p class="w3-justify">
+      <hr>
+      <label for="name">
+      <input type="text" name="name" id="name" placeholder="Name*" required>
+    </label> 
+    
+    <hr>
+
+    <label for="lastname">
+      <input type="text" name="lastname" id="lastname" placeholder="Last Name*" required>
+    </label>
+   
+    <hr>
+
+    <label for="tel">
+      <input type="tel" name="tel" id="tel" placeholder="+90(535) 555 55 55*" required>
+    </label>
+
+      <hr>
+
+    <label for="email">
+      <input type="email" name="email" id="email" placeholder="email@hotmail.com*" required>
+    </label>
+  
+    <form action="/action.html" >
+      <input type="submit" value="Submit" >
+    </form>
+    </p>
+
+    <hr>
+
+  <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i><i><t>Istanbul,TR</t></i><br>
+        <i class="fa fa-phone" style="width:30px"></i> </i><i><t> Phone: +905554443322</t></i><br>
+        <i class="fa fa-envelope" style="width:30px"></i><i><t> Email: mail@mail.com</t></i><br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+    <hr>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/pics/map2.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by Group 15</a></p>
+</footer>
+
+</body>
+</html>

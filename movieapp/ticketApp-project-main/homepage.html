@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TicketApp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3e4555;
+    font-size: 30px;
+}
+
+#showcase,#leftmenu{ 
+    background: 
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url('/pics/Poster.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+    width: 100%;
+    position:relative;
+       
+}
+
+#showcase .content {
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background: rgba(144, 83, 13, 0.3);
+    padding: 40px 40px 50px;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+#showcase h1 {
+  
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    top : 50%;
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    left: 50%;
+    cursor:default;
+    transform: translate(-50%, -50%);
+ 
+}
+.btn-group button {
+
+      border: 1px solid rgba(144, 83, 13, 0.3); 
+      color: black; /* White text */
+      margin-top: 50px ;
+      top : 70%;
+      left: 10%;
+      transform: translate(0%,0%);     
+      font-size: 20px;
+      background-color: rgba(144, 83, 13, 0.3);  
+      padding-top: 18px;
+      width: 15%;
+      margin-top: 55px;
+      display:block;
+}
+
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color:saddlebrown;
+}
+
+
+
+
+
+
+
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+</style>
+<link rel="stylesheet" href="css/searchbar.css" />
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  
+  <div class="w3-bar w3-orange w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button w3-hover-black"><b>TICKET</b> App</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-hide-small">
+      There'll be a search bar in middle of this nav:D
+    </div>
+    <div class="w3-right w3-hide-small"> 
+      <a href="#events.html" class="w3-bar-item w3-button w3-hover-black"> Events</a>  
+      <a href="signUp.html" class="w3-bar-item w3-button w3-hover-black">Sign Up/Login</a>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  
+</header>
+<!-- slayt content -->
+<div class="w3-content w3-padding-62" style="max-width:100%"> 
+  <section id="leftmenu">
+    <div class="btn-group">
+      <button>Movies </button>
+      <button>Theater</button>
+      <button>Concert</button>
+      <button>Sports</button>
+    </div>
+  </section>
+ 
+  <section id="showcase">   
+
+    <div class="content">      
+    <h1>Online Ticket Reservation and Sales System</h1>
+     </div>
+  </section>
+
+<!-- 
+  <div class="mySlides w3-display-container w3-center" style="max-width :2000px;margin-top:46px">
+    <img src="/pics/duman-780x470.webp" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><b>Concerts</b></h3>
+     
+    </div>
+  </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="/pics/Middle-earth-Top-10-Best-Movie-Series-of-All-Time-Ever.jpg.webp" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small ">
+            <h3><b>Cinemas</b></h3>
+            
+        </div>
+      </div>
+      
+  
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/pics/tiyatro.gif" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small ">
+            <h3><b>Theater</b></h3>   
+            
+        </div>
+      </div>
+</div> -->
+
+  <!-- Events Section -->
+
+
+  <!--Movies-->
+  <div class="w3-content w3-padding " style="max-width:1564px">
+    <h2 style="display:ruby-base-container ;"><t>Nearby Events</t></h2> <hr  style="width:200px ;">
+    <h3 class="w3-border-bottom w3-border-light-black w3-padding-16;">Movies</h3>
+  
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-orange w3-padding w3-animate-zoom"> <a href="concerts.html" class="w3-button">Avengers</a></div>
+        <img src="/pics/avengers_.jpg" style="width: 350px;height:400px;">
+      </div> 
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Joker</a></div>
+        <img src="/pics/joker.jpg"  style="width: 350px; height: 400px;">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Titanic</a></div>
+        <img src="/pics/titanic.jpg"  style="width: 350px;height: 400px;">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Spider-Man</a></div>
+        <img src="pics/IMG_7259_1024x1024@2x.webp" style="width: 350px;height: 400px;">
+      </div>
+    </div>
+  </div> 
+</div>
+<!--Theater-->
+
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <h3 class="w3-border-bottom w3-border-light-black w3-padding-16">Theater</h3>
+
+
+<div class="w3-row-padding">
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft  w3-orange w3-padding"><a href="theater.html" class="w3-button">Theater</a></div>
+      <img src="/pics/iki-bekar.jpg"  style="width: 350px;height: 400px">
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom" ><a href="theater.html" class="w3-button">Theater</a></div>
+      <img src="/pics/anne.jpg" style="width: 350px;height: 400px">
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="theater.html" class="w3-button">Theater</a></div>
+      <img src="/pics/tiyatro3.jpg"  style="width: 350px;height: 400px">
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="theater.html" class="w3-button">Theater</a></div>
+      <img src="/pics/tiyatro4.jpg" style="width: 350px;height: 400px">
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Concerts-->
+
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+    <h3 class="w3-border-bottom w3-border-light-black w3-padding-16">Concerts</h3>
+  
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Guns and Roses</a></div>
+        <img src="/pics/guns-n-roses-wts.jpg" style="width: 350px;height: 200px">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Kaleo</a></div>
+        <img src="/pics/duman.jpg"  style="width: 350px;height: 200px">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Metallica</a></div>
+        <img src="/pics/1200x675.webp"  style="width: 350px;height: 200px">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">MFÖ</a></div>
+        <img src="/pics/mfö2.jpg.crdownload" style="width: 350px;height: 200px">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Sports-->
+<div class="w3-content w3-padding" style="max-width:1564px">
+    <h3 class="w3-border-bottom w3-border-light-black w3-padding-16">Sports</h3>
+
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding"><a href="concerts.html" class="w3-button">Sports</a></div>
+        <img src="/pics/ads.jpg" style="width: 350px;height: 200px">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Sports</a></div>
+        <img src="/pics/trlit.jpg"  style="width: 350px;height: 200px">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Sports</a></div>
+        <img src="/pics/eczacıbası.jpg"  style="width: 350px;height: 200px">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft  w3-orange w3-padding w3-animate-zoom"><a href="concerts.html" class="w3-button">Sports</a></div>
+        <img src="/pics/ankara.jpg" style="width: 350px;height: 200px">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/istockphoto-183273177-612x612.jpg" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+  -->
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-borderorange w3-padding-16">About</h3>
+    <p> Watch all Movies & TV Shows once they get released!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam deserunt quaerat? Doloremque expedita repellendus adipisci eligendi nobis illum! Perferendis ab blanditiis eius iste incidunt esse numquam asperiores hic suscipit.
+    </p>
+  </div>
+
+  <!--
+  <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+    <div class="w3-third w3-margin-bottom">
+      <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>New York</b></p>
+        <p class="w3-opacity">Fri 27 Nov 2016</p>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Paris</b></p>
+        <p class="w3-opacity">Sat 28 Nov 2016</p>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>San Francisco</b></p>
+        <p class="w3-opacity">Sun 29 Nov 2016</p>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+ Contact Section  -->
+  <div class="w3-content w3-container w3-padding-64 style="max-width:800px;id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i><i><t>Istanbul,TR</t></i><br>
+        <i class="fa fa-phone" style="width:30px"></i> </i><i><t> Phone: +905554443322</t></i><br>
+        <i class="fa fa-envelope" style="width:30px"></i><i><t> Email: mail@mail.com</t></i><br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+    <hr>
+  </div>
+  
+<!-- Image of location/map 
+<div class="w3-container">
+  <img src="/map2.jpg" class="w3-image" style="width:100%">
+</div> -->
+
+<!-- End Page Contents -->
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3orange w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>   
+    <p class="w3-medium">Powered by Group 15</p>
+  </footer>
+
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+    </script>
+</body>
+</html>

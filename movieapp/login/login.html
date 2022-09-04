@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+
+<div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="login.html">Sign Up</a></li>
+        <li class="tab"><a href="login.html">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/index.html" method="post"> <!-- or get method here to not seem at the link -->
+          
+          <div class="top-row">
+            <div class="field-wrap">
+                        
+              <input type="text" required autocomplete="on" placeholder="First Name" required />
+            </div>
+        
+            <div class="field-wrap">
+              <input type="text"required autocomplete="on" placeholder="Last Name" required/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <input type="email"required autocomplete="on" placeholder="E-mail Address" required/>
+          </div>
+          
+          <div class="field-wrap">
+            <input type="password"required autocomplete="on" placeholder="Password"/>
+          </div>
+          
+          <button type="submit" class="button button-block" onclick="GetStarted">Get Started</button>
+          
+          </form>
+
+        </div>
+        
+       
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+
+
+</body>
+</html>
